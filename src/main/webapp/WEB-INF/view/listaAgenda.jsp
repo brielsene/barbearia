@@ -18,6 +18,7 @@ Data: ${lista.data }
 Horário: ${lista.horario }
 
 <a href="/barbearia/controller?acao=MostraAgendamento&id=${lista.id }">Editar</a>
+<a href="/barbearia/controller?acao=RemoveAgendamento&id=${lista.id }">Remover</a>
 </ul>
 </c:forEach>
 

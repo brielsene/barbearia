@@ -1,7 +1,7 @@
 package br.com.barbearia.model;
 
 import java.util.ArrayList;
-import java.util.Comparator;
+import java.util.Iterator;
 import java.util.List;
 
 public class Banco  {
@@ -64,6 +64,18 @@ public class Banco  {
 			}
 			
 		}return null;
+	}
+	
+	public void removeAgendaPeloId (Integer id) {
+		Iterator<Agenda> it = Banco.getListaAgenda().iterator();
+		while(it.hasNext()) {
+			Agenda agenda = it.next();
+			if(agenda.getId()==id) {
+				it.remove();
+			}
+			
+		}
+				
 	}
 	
 	
