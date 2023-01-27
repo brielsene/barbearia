@@ -57,6 +57,15 @@ public class Banco  {
 		Banco.getListaAgenda().sort((c1,c2)->c1.devolveDataCompleta().compareTo(c2.devolveDataCompleta()));
 	}
 	
+	public Agenda buscaAgendamentoPeloId (Integer id) {
+		for (Agenda agenda : listaAgenda) {
+			if(agenda.getId()==id) {
+				return agenda;
+			}
+			
+		}return null;
+	}
+	
 	
 
 	

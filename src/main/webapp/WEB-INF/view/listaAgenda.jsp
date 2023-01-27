@@ -12,9 +12,12 @@ Agenda:
 <br><br><br>
 
 <c:forEach items="${listaAgenda }" var="lista">
+
 <ul>
 Data: ${lista.data }
 Horário: ${lista.horario }
+
+<a href="/barbearia/controller?acao=MostraAgendamento&id=${lista.id }">Editar</a>
 </ul>
 </c:forEach>
 
