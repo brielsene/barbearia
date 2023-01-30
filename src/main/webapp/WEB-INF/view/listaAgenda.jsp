@@ -8,6 +8,7 @@
 <title>Barbearia</title>
 </head>
 <body>
+<c:import url="logout-parcial.jsp"/>
 Agenda: 
 <br><br><br>
 

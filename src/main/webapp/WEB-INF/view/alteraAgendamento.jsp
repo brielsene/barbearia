@@ -7,6 +7,7 @@
 <title>Barbearia Elatanos</title>
 </head>
 <body>
+<c:import url="logout-parcial.jsp"/>
 <form action="/barbearia/controller" method="post">
 
 
