@@ -20,9 +20,9 @@ public class Login implements Acao {
 		if(usuario != null) {
 			HttpSession sessao = request.getSession();
 			sessao.setAttribute("usuarioLogado", usuario);
-			return "teste";
+			return "redirect:controller?acao=ListaAgenda";
 		}else {
-			return null;
+			return "redirect:controller?acao=FormLogin";
 		}
 		
 	}
